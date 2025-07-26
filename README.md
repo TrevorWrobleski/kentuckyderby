@@ -18,7 +18,7 @@
 - [Colorblind-Safe Options](#colorblind-safe-options)
 - [Advanced Features](#advanced-features)
 
-## 🎯 Installation
+## Installation
 
 ```r
 
@@ -26,7 +26,7 @@
 
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ```r
 # Load required libraries
@@ -46,7 +46,7 @@ ggplot(mpg, aes(displ, hwy, color = class)) +
   derby_theme()
 ```
 
-## 🎨 Color Collections
+## Color Collections
 
 The package includes 46 carefully curated colors inspired by Kentucky Derby traditions:
 
@@ -87,7 +87,7 @@ The package includes 46 carefully curated colors inspired by Kentucky Derby trad
 ![bourbon_amber](https://img.shields.io/badge/bourbon__amber-%23FF8C00-FF8C00) `#FF8C00` - Aged bourbon  
 ![bourbon_gold](https://img.shields.io/badge/bourbon__gold-%23FFB347-FFB347) `#FFB347` - Golden bourbon  
 
-## 📊 Available Palettes
+## Available Palettes
 
 ### Qualitative Palettes (Categorical Data)
 
@@ -135,7 +135,7 @@ Festive palette capturing the pageantry of Derby Day, from roses to mint juleps.
 - **`blue_orange_derby`** - Blue ← White → Orange (colorblind-safe)
 - **`purple_gold_silk`** - Purple ← White → Gold (colorblind-safe)
 
-## 💻 Usage Examples
+## Usage Examples
 
 ### Basic Usage
 
@@ -184,7 +184,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
        subtitle = "Styled with Kentucky Derby Colors")
 ```
 
-## ♿ Colorblind-Safe Options
+## Colorblind-Safe Options
 
 The package includes three colorblind-optimized palettes based on established research:
 
@@ -199,7 +199,7 @@ Additionally, most palettes can be used with `colorblind = TRUE`:
 scale_color_derby("classic_silks", colorblind = TRUE)
 ```
 
-## 🎯 Advanced Features
+## Advanced Features
 
 ### Custom Theme
 
@@ -251,7 +251,7 @@ demo_all_derby_palettes()
 length(derby_palette("the_paddock"))  # Number of colors
 ```
 
-## 📊 Example Visualizations
+## Example Visualizations
 
 ```r
 # Bar chart with farm colors
@@ -274,7 +274,7 @@ ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) +
   derby_theme()
 ```
 
-## 📝 Citation
+## Citation
 
 If you use this package in your work, please cite:
 
@@ -287,14 +287,10 @@ If you use this package in your work, please cite:
 }
 ```
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🌹 Run for the Colors!
+## Run for the Colors!
 
 I hope you enjoy data visualizations with the pageantry and tradition of the Kentucky Derby.
