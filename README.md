@@ -1,4 +1,5 @@
 # 🏇 Kentucky Derby Color Palettes for R
+
 *"The most exciting two minutes in data visualization!"*
 
 **A collection of color palettes inspired by the pageantry, tradition, and natural beauty of the Kentucky Derby and the Bluegrass State**
@@ -20,14 +21,9 @@
 ## 🎯 Installation
 
 ```r
-# Option 1: Direct sourcing
-source("https://raw.githubusercontent.com/yourusername/kentuckyderby/main/kentuckyderby.R")
 
-# Option 2: Local installation
-source("path/to/kentuckyderby.R")
+** TO DO **
 
-# Option 3: As a package (after proper packaging)
-# devtools::install_github("yourusername/kentuckyderby")
 ```
 
 ## 🚀 Quick Start
@@ -55,41 +51,41 @@ ggplot(mpg, aes(displ, hwy, color = class)) +
 The package includes 46 carefully curated colors inspired by Kentucky Derby traditions:
 
 ### Traditional Silks
-![#DC143C](https://via.placeholder.com/15/DC143C/DC143C.png) `churchill_red` (#DC143C) - The iconic red of Churchill Downs  
-![#C21E56](https://via.placeholder.com/15/C21E56/C21E56.png) `roses_deep` (#C21E56) - Deep rose garland hue  
-![#F479A1](https://via.placeholder.com/15/F479A1/F479A1.png) `racing_pink` (#F479A1) - Vibrant jockey silk pink  
-![#FFB6C1](https://via.placeholder.com/15/FFB6C1/FFB6C1.png) `roses_light` (#FFB6C1) - Delicate rose petal  
-![#FF6B35](https://via.placeholder.com/15/FF6B35/FF6B35.png) `orange_blaze` (#FF6B35) - Bold racing orange  
-![#FFD700](https://via.placeholder.com/15/FFD700/FFD700.png) `jockey_gold` (#FFD700) - Winner's gold  
-![#00A86B](https://via.placeholder.com/15/00A86B/00A86B.png) `kelly_green` (#00A86B) - Classic racing green  
-![#191970](https://via.placeholder.com/15/191970/191970.png) `midnight_blue` (#191970) - Deep evening blue  
-![#6B3AA0](https://via.placeholder.com/15/6B3AA0/6B3AA0.png) `royal_purple` (#6B3AA0) - Regal purple  
-![#FFFFFF](https://via.placeholder.com/15/FFFFFF/FFFFFF.png) `pure_white` (#FFFFFF) - Clean silk white  
-![#0A0A0A](https://via.placeholder.com/15/0A0A0A/0A0A0A.png) `racing_black` (#0A0A0A) - Bold contrast black  
+![churchill_red](https://img.shields.io/badge/churchill__red-%23DC143C-DC143C) `#DC143C` - The iconic red of Churchill Downs  
+![roses_deep](https://img.shields.io/badge/roses__deep-%23C21E56-C21E56) `#C21E56` - Deep rose garland hue  
+![racing_pink](https://img.shields.io/badge/racing__pink-%23F479A1-F479A1) `#F479A1` - Vibrant jockey silk pink  
+![roses_light](https://img.shields.io/badge/roses__light-%23FFB6C1-FFB6C1) `#FFB6C1` - Delicate rose petal  
+![orange_blaze](https://img.shields.io/badge/orange__blaze-%23FF6B35-FF6B35) `#FF6B35` - Bold racing orange  
+![jockey_gold](https://img.shields.io/badge/jockey__gold-%23FFD700-FFD700) `#FFD700` - Winner's gold  
+![kelly_green](https://img.shields.io/badge/kelly__green-%2300A86B-00A86B) `#00A86B` - Classic racing green  
+![midnight_blue](https://img.shields.io/badge/midnight__blue-%23191970-191970) `#191970` - Deep evening blue  
+![royal_purple](https://img.shields.io/badge/royal__purple-%236B3AA0-6B3AA0) `#6B3AA0` - Regal purple  
+![pure_white](https://img.shields.io/badge/pure__white-%23FFFFFF-FFFFFF?style=flat&labelColor=gray) `#FFFFFF` - Clean silk white  
+![racing_black](https://img.shields.io/badge/racing__black-%230A0A0A-0A0A0A) `#0A0A0A` - Bold contrast black  
 
 ### Famous Farms
-![#8B0000](https://via.placeholder.com/15/8B0000/8B0000.png) `calumet_devil_red` (#8B0000) - Historic Calumet Farm red  
-![#000080](https://via.placeholder.com/15/000080/000080.png) `calumet_blue` (#000080) - Calumet's signature blue  
-![#006847](https://via.placeholder.com/15/006847/006847.png) `keeneland_green` (#006847) - Keeneland's distinctive green  
-![#FF6600](https://via.placeholder.com/15/FF6600/FF6600.png) `keeneland_orange` (#FF6600) - Keeneland's bright orange  
-![#D3C7B8](https://via.placeholder.com/15/D3C7B8/D3C7B8.png) `keeneland_stone` (#D3C7B8) - Limestone architecture  
-![#FF4500](https://via.placeholder.com/15/FF4500/FF4500.png) `claiborne_orange` (#FF4500) - Claiborne Farm orange  
-![#000000](https://via.placeholder.com/15/000000/000000.png) `claiborne_black` (#000000) - Pure black accent  
+![calumet_devil_red](https://img.shields.io/badge/calumet__devil__red-%238B0000-8B0000) `#8B0000` - Historic Calumet Farm red  
+![calumet_blue](https://img.shields.io/badge/calumet__blue-%23000080-000080) `#000080` - Calumet's signature blue  
+![keeneland_green](https://img.shields.io/badge/keeneland__green-%23006847-006847) `#006847` - Keeneland's distinctive green  
+![keeneland_orange](https://img.shields.io/badge/keeneland__orange-%23FF6600-FF6600) `#FF6600` - Keeneland's bright orange  
+![keeneland_stone](https://img.shields.io/badge/keeneland__stone-%23D3C7B8-D3C7B8) `#D3C7B8` - Limestone architecture  
+![claiborne_orange](https://img.shields.io/badge/claiborne__orange-%23FF4500-FF4500) `#FF4500` - Claiborne Farm orange  
+![claiborne_black](https://img.shields.io/badge/claiborne__black-%23000000-000000) `#000000` - Pure black accent  
 
 ### Kentucky Landscape
-![#7CFC00](https://via.placeholder.com/15/7CFC00/7CFC00.png) `bluegrass_meadow` (#7CFC00) - Fresh spring grass  
-![#228B22](https://via.placeholder.com/15/228B22/228B22.png) `bluegrass_deep` (#228B22) - Rich bluegrass  
-![#355E3B](https://via.placeholder.com/15/355E3B/355E3B.png) `bluegrass_shadow` (#355E3B) - Shaded pasture  
-![#F0F8FF](https://via.placeholder.com/15/F0F8FF/F0F8FF.png) `morning_mist` (#F0F8FF) - Dawn mist  
-![#FAF0E6](https://via.placeholder.com/15/FAF0E6/FAF0E6.png) `limestone_white` (#FAF0E6) - Kentucky limestone  
-![#D3D3D3](https://via.placeholder.com/15/D3D3D3/D3D3D3.png) `limestone_gray` (#D3D3D3) - Weathered stone  
-![#8B4513](https://via.placeholder.com/15/8B4513/8B4513.png) `saddle_brown` (#8B4513) - Rich leather  
+![bluegrass_meadow](https://img.shields.io/badge/bluegrass__meadow-%237CFC00-7CFC00) `#7CFC00` - Fresh spring grass  
+![bluegrass_deep](https://img.shields.io/badge/bluegrass__deep-%23228B22-228B22) `#228B22` - Rich bluegrass  
+![bluegrass_shadow](https://img.shields.io/badge/bluegrass__shadow-%23355E3B-355E3B) `#355E3B` - Shaded pasture  
+![morning_mist](https://img.shields.io/badge/morning__mist-%23F0F8FF-F0F8FF?style=flat&labelColor=gray) `#F0F8FF` - Dawn mist  
+![limestone_white](https://img.shields.io/badge/limestone__white-%23FAF0E6-FAF0E6?style=flat&labelColor=gray) `#FAF0E6` - Kentucky limestone  
+![limestone_gray](https://img.shields.io/badge/limestone__gray-%23D3D3D3-D3D3D3) `#D3D3D3` - Weathered stone  
+![saddle_brown](https://img.shields.io/badge/saddle__brown-%238B4513-8B4513) `#8B4513` - Rich leather  
 
 ### Bourbon Heritage
-![#3E2723](https://via.placeholder.com/15/3E2723/3E2723.png) `barrel_char` (#3E2723) - Charred oak barrel  
-![#B87333](https://via.placeholder.com/15/B87333/B87333.png) `copper_still` (#B87333) - Distillery copper  
-![#FF8C00](https://via.placeholder.com/15/FF8C00/FF8C00.png) `bourbon_amber` (#FF8C00) - Aged bourbon  
-![#FFB347](https://via.placeholder.com/15/FFB347/FFB347.png) `bourbon_gold` (#FFB347) - Golden bourbon  
+![barrel_char](https://img.shields.io/badge/barrel__char-%233E2723-3E2723) `#3E2723` - Charred oak barrel  
+![copper_still](https://img.shields.io/badge/copper__still-%23B87333-B87333) `#B87333` - Distillery copper  
+![bourbon_amber](https://img.shields.io/badge/bourbon__amber-%23FF8C00-FF8C00) `#FF8C00` - Aged bourbon  
+![bourbon_gold](https://img.shields.io/badge/bourbon__gold-%23FFB347-FFB347) `#FFB347` - Golden bourbon  
 
 ## 📊 Available Palettes
 
@@ -97,14 +93,14 @@ The package includes 46 carefully curated colors inspired by Kentucky Derby trad
 
 #### Primary Palettes
 
-**`classic_silks`** (7 colors)
-![Classic Silks](https://via.placeholder.com/400x40/FFD700/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/DC143C/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/6B3AA0/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/000080/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/FF6B35/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/8B4513/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/FFFFFF/000000?text=+)
+**`classic_silks`** (7 colors)  
+A refined selection of traditional jockey silk colors perfect for most categorical visualizations.
 
-**`kentucky_farms`** (6 colors)
-![Kentucky Farms](https://via.placeholder.com/400x40/000080/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/006847/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/FF4500/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/8B0000/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/8B4513/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/D3C7B8/000000?text=+)
+**`kentucky_farms`** (6 colors)  
+Colors inspired by the historic horse farms of the Bluegrass region.
 
-**`derby_day`** (7 colors)
-![Derby Day](https://via.placeholder.com/400x40/FFD700/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/C21E56/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/FFB7C5/000000?text=+) ![](https://via.placeholder.com/400x40/98FF98/000000?text=+) ![](https://via.placeholder.com/400x40/FF8C00/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/191970/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/FFFFFF/000000?text=+)
+**`derby_day`** (7 colors)  
+Festive palette capturing the pageantry of Derby Day, from roses to mint juleps.
 
 #### Extended Palettes
 
@@ -124,22 +120,20 @@ The package includes 46 carefully curated colors inspired by Kentucky Derby trad
 
 ### Sequential Palettes (Continuous Data)
 
-**`run_for_roses`** - White → Pink → Deep Red  
-![Run for Roses](https://via.placeholder.com/400x40/FFFAF0/000000?text=+) ![](https://via.placeholder.com/400x40/FFB6C1/000000?text=+) ![](https://via.placeholder.com/400x40/C21E56/FFFFFF?text=+)
-
-**`bluegrass_morning`** - Mist → Mint → Deep Green  
-![Bluegrass Morning](https://via.placeholder.com/400x40/F0F8FF/000000?text=+) ![](https://via.placeholder.com/400x40/98FF98/000000?text=+) ![](https://via.placeholder.com/400x40/228B22/FFFFFF?text=+)
-
-**`bourbon_sunset`** - Light → Gold → Dark Brown  
-![Bourbon Sunset](https://via.placeholder.com/400x40/FAF0E6/000000?text=+) ![](https://via.placeholder.com/400x40/FFB347/000000?text=+) ![](https://via.placeholder.com/400x40/3E2723/FFFFFF?text=+)
+- **`run_for_roses`** - White → Pink → Deep Red
+- **`bluegrass_morning`** - Mist → Mint → Deep Green
+- **`bourbon_sunset`** - Light → Gold → Dark Brown
+- **`purple_silk`** - Lavender → Purple → Indigo
+- **`midnight_fade`** - Lavender → Midnight Blue → Black
+- **`golden_silk`** - White → Light Gold → Deep Gold
 
 ### Diverging Palettes (Data with Natural Midpoint)
 
-**`roses_to_mint`** - Red ← White → Green  
-![Roses to Mint](https://via.placeholder.com/400x40/C21E56/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/FAF0E6/000000?text=+) ![](https://via.placeholder.com/400x40/228B22/FFFFFF?text=+)
-
-**`derby_rivalry`** - Red ← Gray → Blue  
-![Derby Rivalry](https://via.placeholder.com/400x40/DC143C/FFFFFF?text=+) ![](https://via.placeholder.com/400x40/D3D3D3/000000?text=+) ![](https://via.placeholder.com/400x40/000080/FFFFFF?text=+)
+- **`roses_to_mint`** - Red ← White → Green
+- **`derby_rivalry`** - Red ← Gray → Blue
+- **`sunrise_churchill`** - Purple ← Mist → Gold
+- **`blue_orange_derby`** - Blue ← White → Orange (colorblind-safe)
+- **`purple_gold_silk`** - Purple ← White → Gold (colorblind-safe)
 
 ## 💻 Usage Examples
 
@@ -217,6 +211,13 @@ ggplot(data, aes(x, y)) +
   derby_theme(base_size = 14)
 ```
 
+Features:
+- Limestone white background
+- Serif typography
+- Subtle grid lines
+- Themed facet strips
+- Professional appearance
+
 ### Line Types and Shapes
 
 Thematically appropriate line types and point shapes:
@@ -225,6 +226,13 @@ Thematically appropriate line types and point shapes:
 # Access Derby-themed aesthetics
 derby_linetypes  # 6 line patterns
 derby_shapes     # 8 point shapes
+
+# Use in plots
+ggplot(data, aes(x, y, linetype = group, shape = group)) +
+  geom_line() +
+  geom_point() +
+  scale_linetype_manual(values = derby_linetypes) +
+  scale_shape_manual(values = derby_shapes)
 ```
 
 ### Palette Exploration
@@ -238,21 +246,55 @@ show_derby_palette("bourbon_heritage")
 
 # Demo all palettes
 demo_all_derby_palettes()
+
+# Get palette info
+length(derby_palette("the_paddock"))  # Number of colors
+```
+
+## 📊 Example Visualizations
+
+```r
+# Bar chart with farm colors
+ggplot(mpg, aes(class, fill = class)) +
+  geom_bar() +
+  scale_fill_derby("kentucky_farms") +
+  derby_theme() +
+  theme(legend.position = "none")
+
+# Heatmap with sequential palette
+ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
+  geom_tile() +
+  scale_fill_derby_seq("bourbon_sunset") +
+  derby_theme()
+
+# Scatter plot with colorblind-safe palette
+ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) +
+  geom_point(size = 3, alpha = 0.8) +
+  scale_color_derby("jockey_silks_cb") +
+  derby_theme()
 ```
 
 ## 📝 Citation
 
 If you use this package in your work, please cite:
 
+```bibtex
+@software{kentuckyderby2025,
+  author = {Trevor Wrobleski},
+  title = {kentuckyderby: Kentucky Derby-Inspired Color Palettes for R},
+  year = {2025},
+  url = {https://github.com/trevorwrobleski/kentuckyderby}
+}
 ```
-Trevor Wrobleski (2025). kentuckyderby: Kentucky Derby-Inspired Color Palettes for R.
-GitHub: https://github.com/trevorwrobleski/kentuckyderby
-```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit issues or pull requests.
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🌹 Run for the Colors!
 
-Transform your data visualizations with the pageantry and tradition of the Kentucky Derby. Whether you're presenting at conferences, publishing papers, or creating stunning visualizations, these palettes bring the beauty of Churchill Downs to your R plots.
-
----
-
-**Happy plotting! 🏇🌹**
+I hope you enjoy data visualizations with the pageantry and tradition of the Kentucky Derby.
