@@ -1,6 +1,6 @@
 # 🏇 Kentucky Derby Color Palettes for R
 
-*"This guide is the most exciting two minutes in data visualization!"*
+*"The most exciting two minutes in Kentucky data visualization!"*
 
 **A collection of color palettes inspired by the pageantry, tradition, and natural beauty of the Kentucky Derby and the Bluegrass State**
 
