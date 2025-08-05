@@ -22,10 +22,18 @@
 
 ## Installation
 
+
 ```r
+# First, install the 'remotes' package if you haven't already
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
 
-** TO DO **
+# Now, install the kentuckyderby package from GitHub
+remotes::install_github("trevorwrobleski/kentuckyderby")
 
+# Finally, load the package
+library(kentuckyderby)
 ```
 
 ## Quick Start
@@ -192,84 +200,15 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
        subtitle = "Styled with Kentucky Derby Colors")
 ```
 
-## Colorblind-Safe Options
-
-The package includes three colorblind-optimized palettes based on established research:
-
-1. **`jockey_silks_cb`** - Based on Okabe-Ito palette
-2. **`twin_spires_cb`** - Inspired by Paul Tol's schemes
-3. **`winners_circle_cb`** - Extended 12-color safe palette
-
-Additionally, most palettes can be used with `colorblind = TRUE`:
-
-```r
-# Automatic colorblind-safe substitution
-scale_color_derby("classic_silks", colorblind = TRUE)
-```
-
-## Advanced Features
-
-### Custom Theme
-
-The `derby_theme()` function provides a complete ggplot2 theme:
-
-```r
-ggplot(data, aes(x, y)) +
-  geom_point() +
-  derby_theme(base_size = 14)
-```
-
-Features:
-- Limestone white background
-- Serif typography
-- Subtle grid lines
-- Themed facet strips
-- Professional appearance
-
-### Line Types and Shapes
-
-Thematically appropriate line types and point shapes:
-
-```r
-# Access Derby-themed aesthetics
-derby_linetypes  # 6 line patterns
-derby_shapes     # 8 point shapes
-
-# Use in plots
-ggplot(data, aes(x, y, linetype = group, shape = group)) +
-  geom_line() +
-  geom_point() +
-  scale_linetype_manual(values = derby_linetypes) +
-  scale_shape_manual(values = derby_shapes)
-```
-
-### Palette Exploration
-
-```r
-# List all available palettes
-list_derby_palettes()
-
-# View specific palette
-show_derby_palette("bourbon_heritage")
-
-# Demo all palettes
-demo_all_derby_palettes()
-
-# Get palette info
-length(derby_palette("the_paddock"))  # Number of colors
-```
-
 ## Example Visualizations
 
-## Example Visualizations
-
-This gallery showcases plots created using the `kentuckyderby` color palettes and theme, demonstrating how to craft visually compelling, publication-quality graphics.
+This gallery showcases plots created using the `kentuckyderby` color palettes and theme.
 
 ---
 
 ### Waffle Chart: Breeding Grounds of Champions
 
-This waffle chart uses a custom categorical palette to effectively illustrate the overwhelming dominance of Kentucky as the breeding ground for Derby winners since 1875. Each square represents one champion, providing an immediate, clear comparison of the different breeding locations.
+This waffle chart uses a custom categorical palette to effectively illustrate the overwhelming dominance of Kentucky as the breeding ground for Derby winners since 1875. Each square represents one champion to compare different breeding locations.
 
 ![Waffle Chart of Derby Winner Breeding Locations](gallery/brlb1.png)
 
@@ -351,7 +290,7 @@ ggplot(kentucky_map_data, aes(x = long, y = lat, group = group)) +
 
 ### Lollipop Chart: Betting Odds Shift
 
-This lollipop chart highlights how betting odds changed for key contenders in the 149th Kentucky Derby, from the morning line to the final odds. The plot uses the diverging `derby_rivalry` palette to clearly distinguish between horses whose odds shortened (blue) versus those that drifted out (red).
+This lollipop chart highlights how betting odds changed for key contenders in the 149th Kentucky Derby (2023), from the morning line to the final odds. The plot uses the diverging `derby_rivalry` palette to clearly distinguish between horses whose odds shortened (blue) versus those that drifted out (red).
 
 ![Lollipop Chart of Betting Odds Changes](gallery/cbo149.png)
 
@@ -393,6 +332,73 @@ ggplot(iris, aes(Sepal.Length, Petal.Length, color = Species)) +
   geom_point(size = 3, alpha = 0.8) +
   scale_color_derby("jockey_silks_cb") +
   derby_theme()
+```
+
+## Colorblind-Safe Options
+
+The package includes three colorblind-optimized palettes based on established research:
+
+1. **`jockey_silks_cb`** - Based on Okabe-Ito palette
+2. **`twin_spires_cb`** - Inspired by Paul Tol's schemes
+3. **`winners_circle_cb`** - Extended 12-color safe palette
+
+Additionally, most palettes can be used with `colorblind = TRUE`:
+
+```r
+# Automatic colorblind-safe substitution
+scale_color_derby("classic_silks", colorblind = TRUE)
+```
+
+## Advanced Features
+
+### Custom Theme
+
+The `derby_theme()` function provides a complete ggplot2 theme:
+
+```r
+ggplot(data, aes(x, y)) +
+  geom_point() +
+  derby_theme(base_size = 14)
+```
+
+Features:
+- Limestone white background
+- Serif typography
+- Subtle grid lines
+- Themed facet strips
+- Professional appearance
+
+### Line Types and Shapes
+
+Thematically appropriate line types and point shapes:
+
+```r
+# Access Derby-themed aesthetics
+derby_linetypes  # 6 line patterns
+derby_shapes     # 8 point shapes
+
+# Use in plots
+ggplot(data, aes(x, y, linetype = group, shape = group)) +
+  geom_line() +
+  geom_point() +
+  scale_linetype_manual(values = derby_linetypes) +
+  scale_shape_manual(values = derby_shapes)
+```
+
+### Palette Exploration
+
+```r
+# List all available palettes
+list_derby_palettes()
+
+# View specific palette
+show_derby_palette("bourbon_heritage")
+
+# Demo all palettes
+demo_all_derby_palettes()
+
+# Get palette info
+length(derby_palette("the_paddock"))  # Number of colors
 ```
 
 ## Citation
