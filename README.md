@@ -140,10 +140,8 @@ These palettes are ideal for visualizing data that deviates from a central value
 | :--- | :--- | :--- |
 | **`roses_to_mint`** | Red ← White → Green | ![roses_to_mint](gallery/palette_roses_to_mint.png) |
 | **`derby_rivalry`** | Red ← Gray → Blue | ![derby_rivalry](gallery/palette_derby_rivalry.png) |
-| **`sunrise_churchill`** | Purple ← Mist → Gold | ![sunrise_churchill](gallery/palette_sunrise_churchill.png) |
+| **`sunrise_churchill`** | **Colorblind-safe**: Purple ← Mist → Gold | ![sunrise_churchill](gallery/palette_sunrise_churchill.png) |
 | **`blue_orange_derby`** | **Colorblind-safe**: Blue ← White → Orange | ![blue_orange_derby](gallery/palette_blue_orange_derby.png) |
-| **`purple_gold_silk`** | **Colorblind-safe**: Purple ← White → Gold | ![purple_gold_silk](gallery/palette_purple_gold_silk.png) |
-
 
 ## Usage Examples
 
@@ -263,6 +261,119 @@ length(derby_palette("the_paddock"))  # Number of colors
 
 ## Example Visualizations
 
+## Example Visualizations
+
+This gallery showcases plots created using the `kentuckyderby` color palettes and theme, demonstrating how to craft visually compelling, publication-quality graphics.
+
+---
+
+### Waffle Chart: Breeding Grounds of Champions
+
+This waffle chart uses a custom categorical palette to effectively illustrate the overwhelming dominance of Kentucky as the breeding ground for Derby winners since 1875. Each square represents one champion, providing an immediate, clear comparison of the different breeding locations.
+
+![Waffle Chart of Derby Winner Breeding Locations](gallery/brlb1.png)
+
+```r
+# Create the waffle chart with custom aesthetics
+waffle(
+  breeding_wins, 
+  rows = 7, 
+  size = 0.7, 
+  colors = custom_colors,
+  legend_pos = "bottom"
+) +
+  
+  # Use labs() to set the title and subtitle
+  labs(
+    title = "Born to Run: A Legacy in Bluegrass",
+    subtitle = "A breakdown of where Kentucky Derby champions are bred since 1875."
+  ) +
+
+  # Apply custom theme elements
+  theme(
+    plot.background = element_rect(fill = derby_colors$limestone_white, color = NA),
+    panel.background = element_rect(fill = derby_colors$limestone_white, color = NA),
+    plot.title = element_text(hjust = 0.5, size = 26, face = "bold", 
+                              family = "serif", color = derby_colors$charcoal_rail),
+    plot.subtitle = element_text(hjust = 0.5, size = 14,
+                                 family = "serif", color = derby_colors$charcoal_rail,
+                                 margin = margin(t = 5, b = 20)),
+    legend.text = element_text(family = "serif", color = derby_colors$charcoal_rail, size = 12),
+    legend.background = element_rect(fill = derby_colors$limestone_white),
+    legend.key = element_rect(fill = derby_colors$limestone_white)
+  )
+```
+
+---
+
+### Choropleth Map: The Heart of Horse Country
+
+This choropleth map shows the concentration of horse farms across Kentucky's counties. It uses the `bluegrass_morning` sequential palette to visually represent the density of the equine industry, highlighting the central Bluegrass region as the heart of thoroughbred country.
+
+![Choropleth Map of Kentucky Horse Farms](gallery/lkei1.png)
+
+```r
+ggplot(kentucky_map_data, aes(x = long, y = lat, group = group)) +
+  geom_polygon(aes(fill = farm_count), color = alpha(derby_colors$charcoal_rail, 0.4)) +
+  scale_fill_derby_seq(
+    palette = "bluegrass_morning",
+    name = "Number of Farms with Horses", # Title for the legend
+    na.value = "grey90",
+    labels = comma,
+    # Make the legend bar horizontal and adjust size
+    guide = guide_colorbar(
+      barwidth = 15, 
+      barheight = 0.7, 
+      title.position = "top",
+      title.hjust = 0.5 # Center the title over the bar
+    )
+  ) +
+  coord_map(projection = "albers", lat0 = 36, lat1 = 39) +
+  derby_theme() +
+  labs(
+    title = "The Landscape of Kentucky's Equine Industry",
+    subtitle = "Mapping the Heart of Thoroughbred Country"
+  ) +
+  theme(
+    axis.title = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    panel.grid = element_blank(),
+    # Position the legend at the bottom
+    legend.position = "bottom",
+    legend.direction = "horizontal",
+    legend.title = element_text(size = 9), # Slightly smaller title text
+    legend.text = element_text(size = 8)   # Slightly smaller label text
+  )
+```
+
+---
+
+### Lollipop Chart: Betting Odds Shift
+
+This lollipop chart highlights how betting odds changed for key contenders in the 149th Kentucky Derby, from the morning line to the final odds. The plot uses the diverging `derby_rivalry` palette to clearly distinguish between horses whose odds shortened (blue) versus those that drifted out (red).
+
+![Lollipop Chart of Betting Odds Changes](gallery/cbo149.png)
+
+```r
+# Plot the odds change
+ggplot(derby_odds_2023, aes(x = reorder(Horse, OddsChange), y = OddsChange, color = OddsChange)) +
+  geom_segment(aes(xend = reorder(Horse, OddsChange), yend = 0), linewidth = 1) +
+  geom_point(size = 5) +
+  scale_color_derby_div(palette = "derby_rivalry") +
+  coord_flip() +
+  derby_theme() +
+  labs(
+    title = "Change in Betting Odds: 149th Kentucky Derby",
+    subtitle = "From Morning Line to Final Odds at Post Time",
+    x = "Horse",
+    y = "Change in Odds (Final - Morning Line)"
+  ) +
+  theme(legend.position = "none") +
+  geom_hline(yintercept = 0, linetype = "dashed", color = derby_colors$barrel_char)
+```
+
+### Additional Examples to Try
 ```r
 # Bar chart with farm colors
 ggplot(mpg, aes(class, fill = class)) +
