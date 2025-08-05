@@ -1,11 +1,11 @@
 # kentuckyderby.R: A Kentucky Derby-Inspired Color Palette Package for R
 
-@software{kentuckyderby2025,
-  author = {Trevor Wrobleski},
-  title = {kentuckyderby: Kentucky Derby-Inspired Color Palettes for R},
-  year = {2025},
-  url = {https://github.com/trevorwrobleski/kentuckyderby}
-}
+# @software{kentuckyderby2025,
+#  author = {Trevor Wrobleski},
+#  title = {kentuckyderby: Kentucky Derby-Inspired Color Palettes for R},
+#  year = {2025},
+#  url = {https://github.com/trevorwrobleski/kentuckyderby}
+#}
 
 # Required libraries
 library(ggplot2)
