@@ -180,7 +180,7 @@ These palettes are designed for discrete categorical data where colors need to b
 | **`jockey_silks_cb`** | 8-color **colorblind-safe** palette (Okabe-Ito based). | ![jockey_silks_cb](gallery/palette_jockey_silks_cb.png) |
 | **`twin_spires_cb`** | 10-color **colorblind-safe** palette (Paul Tol inspired). | ![twin_spires_cb](gallery/palette_twin_spires_cb.png) |
 | **`winners_circle_cb`**| An extended 12-color **colorblind-safe** palette. | ![winners_circle_cb](gallery/palette_winners_circle_cb.png) |
-| **`equestrian_tack_reds`**| An extended 12-color **colorblind-safe** palette. | ![equestrian_tack_reds](gallery/palette_equestrain_tack_pinks_reds.png) |
+| **`equestrian_tack_reds`**| An extended 12-color **colorblind-safe** palette. | ![equestrian_tack_reds](gallery/palette_equestrian_tack_pinks_reds.png) |
 
 ### Sequential Palettes (Continuous Data)
 Use these smooth gradients for continuous data that progresses from low to high.
