@@ -97,6 +97,58 @@ The package includes 46 carefully curated colors inspired by Kentucky Derby trad
 ![bourbon_amber](https://img.shields.io/badge/bourbon__amber-%23FF8C00-FF8C00) `#FF8C00` - Aged bourbon  
 ![bourbon_gold](https://img.shields.io/badge/bourbon__gold-%23FFB347-FFB347) `#FFB347` - Golden bourbon  
 
+### Equestrian Tack
+
+#### Pinks & Reds
+![rose_porcelaine](https://img.shields.io/badge/rose__porcelaine-%23DDBCB4-DDBCB4) `#DDBCB4` - Porcelain blush leather  
+![rose_coquille](https://img.shields.io/badge/rose__coquille-%23E1B2A0-E1B2A0) `#E1B2A0` - Shell pink saddle dye  
+![rose_baltique](https://img.shields.io/badge/rose__baltique-%23D2A49B-D2A49B) `#D2A49B` - Baltic rose patina  
+![rose_horizon](https://img.shields.io/badge/rose__horizon-%23EB655A-EB655A) `#EB655A` - Horizon rose lacquer  
+![orange_boite](https://img.shields.io/badge/orange__boite-%23EE7E3D-EE7E3D) `#EE7E3D` - Box-orange enamel accent  
+![orange_poppy](https://img.shields.io/badge/orange__poppy-%23EA562C-EA562C) `#EA562C` - Poppy orange highlight  
+![rose_incarnat](https://img.shields.io/badge/rose__incarnat-%23E34B61-E34B61) `#E34B61` - Incarnadine ribbon dye  
+![rouge_exotique](https://img.shields.io/badge/rouge__exotique-%23DA3037-DA3037) `#DA3037` - Exotic red enamel  
+![rose_tamise](https://img.shields.io/badge/rose__tamise-%23A56969-A56969) `#A56969` - Tamisé rose suede  
+![rouge_casaque](https://img.shields.io/badge/rouge__casaque-%23C82A20-C82A20) `#C82A20` - Casaque red livery  
+![rose_indien](https://img.shields.io/badge/rose__indien-%23DA3655-DA3655) `#DA3655` - Indian rose dye  
+![orange_brule](https://img.shields.io/badge/orange__brule-%23C14034-C14034) `#C14034` - Burnt orange bridle  
+![rose_magenta](https://img.shields.io/badge/rose__magenta-%23CD3B5C-CD3B5C) `#CD3B5C` - Magenta rose  
+![rouge_amazone](https://img.shields.io/badge/rouge__amazone-%23BE2920-BE2920) `#BE2920` - Amazone red tack  
+![rouge_grenade](https://img.shields.io/badge/rouge__grenade-%23C52A3A-C52A3A) `#C52A3A` - Pomegranate red  
+![rouge_piment](https://img.shields.io/badge/rouge__piment-%23B8262A-B8262A) `#B8262A` - Chili red accent  
+![rouge_h_dark](https://img.shields.io/badge/rouge__h__dark-%23590F10-590F10) `#590F10` - Deep oxblood core  
+![rouge_h_muted](https://img.shields.io/badge/rouge__h__muted-%23755151-755151) `#755151` - Muted saddle rose  
+
+#### Greens & Blues
+![vert_egyptien](https://img.shields.io/badge/vert__egyptien-%232B6651-2B6651) `#2B6651` - Egyptian green leather  
+![vert_ecossais](https://img.shields.io/badge/vert__ecossais-%2319413E-19413E) `#19413E` - Scottish green tweed  
+![bleu_encre](https://img.shields.io/badge/bleu__encre-%2321213A-21213A) `#21213A` - Inkwell midnight blue  
+![bleu_agate_dark](https://img.shields.io/badge/bleu__agate__dark-%2333485D-33485D) `#33485D` - Dark agate blue  
+![bleu_agate_light](https://img.shields.io/badge/bleu__agate__light-%2342576C-42576C) `#42576C` - Light agate blue  
+![bleu_indigo](https://img.shields.io/badge/bleu__indigo-%2348474D-48474D) `#48474D` - Indigo steel  
+![vert_fonce](https://img.shields.io/badge/vert__fonce-%2351524C-51524C) `#51524C` - Deep moss green  
+
+#### Neutrals & Accents
+![jaune_imperial](https://img.shields.io/badge/jaune__imperial-%23D9A447-D9A447) `#D9A447` - Imperial bridle gold  
+![gris_etoupe](https://img.shields.io/badge/gris__etoupe-%239A816B-9A816B) `#9A816B` - Classic étoupe grain  
+![etoupe](https://img.shields.io/badge/etoupe-%23817269-817269) `#817269` - Taupe saddle  
+![violet_byzantin](https://img.shields.io/badge/violet__byzantin-%233C1122-3C1122) `#3C1122` - Byzantine violet  
+![brun_bistre](https://img.shields.io/badge/brun__bistre-%233C2D26-3C2D26) `#3C2D26` - Bistre brown leather  
+![ebene](https://img.shields.io/badge/ebene-%23413C39-413C39) `#413C39` - Ebony edge paint  
+![noir](https://img.shields.io/badge/noir-%23212121-212121) `#212121` - Jet black  
+![ardoise](https://img.shields.io/badge/ardoise-%234D494E-4D494E) `#4D494E` - Slate hardware  
+
+#### Custom Warm/Cool
+![warm_1](https://img.shields.io/badge/warm__1-%23C96051-C96051) `#C96051` - Warm terracotta  
+![warm_2](https://img.shields.io/badge/warm__2-%23831E12-831E12) `#831E12` - Rust cinch  
+![warm_3](https://img.shields.io/badge/warm__3-%23AB2D26-AB2D26) `#AB2D26` - Brick girth  
+![warm_4](https://img.shields.io/badge/warm__4-%23C1765E-C1765E) `#C1765E` - Sienna bridle oil  
+![cool_1](https://img.shields.io/badge/cool__1-%23323727-323727) `#323727` - Deep field green  
+![cool_2](https://img.shields.io/badge/cool__2-%234A591D-4A591D) `#4A591D` - Olive turf  
+![cool_3](https://img.shields.io/badge/cool__3-%233C354B-3C354B) `#3C354B` - Twilight blue-violet  
+![cool_4](https://img.shields.io/badge/cool__4-%23375E8E-375E8E) `#375E8E` - Cobalt reins  
+![cool_5](https://img.shields.io/badge/cool__5-%23CBDB9D-CBDB9D) `#CBDB9D` - Pasture mint  
+
 ## Palette Gallery
 
 The palettes are divided into three types: **Qualitative** for categorical data, **Sequential** for gradients representing low-to-high values, and **Diverging** for data with a meaningful midpoint.
@@ -128,6 +180,7 @@ These palettes are designed for discrete categorical data where colors need to b
 | **`jockey_silks_cb`** | 8-color **colorblind-safe** palette (Okabe-Ito based). | ![jockey_silks_cb](gallery/palette_jockey_silks_cb.png) |
 | **`twin_spires_cb`** | 10-color **colorblind-safe** palette (Paul Tol inspired). | ![twin_spires_cb](gallery/palette_twin_spires_cb.png) |
 | **`winners_circle_cb`**| An extended 12-color **colorblind-safe** palette. | ![winners_circle_cb](gallery/palette_winners_circle_cb.png) |
+| **`equestrian_tack_reds`**| An extended 12-color **colorblind-safe** palette. | ![equestrian_tack_reds](gallery/palette_equestrain_tack_pinks_reds.png) |
 
 ### Sequential Palettes (Continuous Data)
 Use these smooth gradients for continuous data that progresses from low to high.
@@ -137,9 +190,10 @@ Use these smooth gradients for continuous data that progresses from low to high.
 | **`run_for_roses`** | White → Pink → Deep Red | ![run_for_roses](gallery/palette_run_for_roses.png) |
 | **`bluegrass_morning`** | Mist → Mint → Deep Green | ![bluegrass_morning](gallery/palette_bluegrass_morning.png) |
 | **`bourbon_sunset`** | Light → Gold → Dark Brown | ![bourbon_sunset](gallery/palette_bourbon_sunset.png) |
-| **`purple_silk`** | Lavender → Purple → Indigo | ![purple_silk](gallery/palette_purple_silk.png) |
 | **`midnight_fade`** | Lavender → Midnight Blue → Black | ![midnight_fade](gallery/palette_midnight_fade.png) |
-| **`golden_silk`** | White → Light Gold → Deep Gold | ![golden_silk](gallery/palette_golden_silk.png) |
+| **`rose_fade`** | Light pink -> Pink -> Oxblood | ![midnight_fade](gallery/palette_rose_fade.png) |
+| **`forest_night`** | Vert Egyptien -> Ecossais -> Bleu Encre | ![midnight_fade](gallery/palette_forest_night.png) |
+
 
 ### Diverging Palettes (Data with a Midpoint)
 These palettes are ideal for visualizing data that deviates from a central value (like zero).
@@ -150,6 +204,7 @@ These palettes are ideal for visualizing data that deviates from a central value
 | **`derby_rivalry`** | Red ← Gray → Blue | ![derby_rivalry](gallery/palette_derby_rivalry.png) |
 | **`sunrise_churchill`** | **Colorblind-safe**: Purple ← Mist → Gold | ![sunrise_churchill](gallery/palette_sunrise_churchill.png) |
 | **`blue_orange_derby`** | **Colorblind-safe**: Blue ← White → Orange | ![blue_orange_derby](gallery/palette_blue_orange_derby.png) |
+| **`equestrian_orange_blue`** | **Colorblind-safe**: Orange ← White → Blue | ![equestrian_orange_blue](gallery/palette_equestrian_orange_blue.png) |
 
 ## Usage Examples
 
