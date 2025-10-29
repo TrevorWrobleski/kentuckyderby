@@ -1,11 +1,5 @@
 # kentuckyderby.R: A Kentucky Derby-Inspired Color Palette Package for R
-
-# @software{kentuckyderby2025,
-#  author = {Trevor Wrobleski},
-#  title = {kentuckyderby: Kentucky Derby-Inspired Color Palettes for R},
-#  year = {2025},
-#  url = {https://github.com/trevorwrobleski/kentuckyderby}
-#}
+# Updated to include the "Equestrian Tack" collection
 
 # Required libraries
 library(ggplot2)
@@ -23,7 +17,6 @@ derby_colors <- list(
   racing_pink      = "#F479A1",
   roses_light      = "#FFB6C1",
   orange_blaze     = "#FF6B35",
-  jockey_gold      = "#FFD700",
   kelly_green      = "#00A86B",
   midnight_blue    = "#191970",
   royal_purple     = "#6B3AA0",
@@ -33,7 +26,6 @@ derby_colors <- list(
   calumet_devil_red = "#8B0000",
   calumet_blue      = "#000080",
   keeneland_green   = "#006847",
-  keeneland_orange  = "#FF6600",
   keeneland_stone   = "#D3C7B8",
   claiborne_orange  = "#FF4500",
   claiborne_black   = "#000000",
@@ -66,40 +58,96 @@ derby_colors <- list(
   charcoal_rail     = "#36454F",
   starting_green    = "#00FF00",
   
-  # -------------------------------------------------------------------------
-  # color-blind–palette helper hues
-  # -------------------------------------------------------------------------
-  bourbon_orange    = "#E69F00",  # vivid orange (Okabe-Ito)
-  calumet_sky       = "#56B4E9",  # clear sky blue
-  mint_turf         = "#009E73",  # turf green
-  jockey_yellow     = "#F0E442",  # bright yellow
-  bluegrass_blue    = "#0072B2",  # mid-blue
-  clay_track        = "#D55E00",  # reddish clay
-  lily_magenta      = "#CC79A7",  # magenta-pink
-  midnight_spire    = "#332288",  # deep indigo
-  spring_sky        = "#88CCEE",  # pale sky blue
-  paddock_teal      = "#44AA99",  # teal
-  bluegrass_forest  = "#117733",  # dark green
-  golden_field      = "#999933",  # muted mustard
-  silks_khaki       = "#DDCC77",  # khaki
-  rose_dust         = "#CC6677",  # dusty rose
-  winners_wine      = "#882255",  # wine red
-  orchard_purple    = "#AA4499"  # purple
+  # --- Color-blind–palette helper hues -------------------------------------
+  bourbon_orange    = "#E69F00",  
+  calumet_sky       = "#56B4E9",
+  mint_turf         = "#009E73",
+  jockey_yellow     = "#F0E442",
+  bluegrass_blue    = "#0072B2",
+  clay_track        = "#D55E00",
+  lily_magenta      = "#CC79A7",
+  midnight_spire    = "#332288",
+  spring_sky        = "#88CCEE",
+  paddock_teal      = "#44AA99",
+  bluegrass_forest  = "#117733",
+  golden_field      = "#999933",
+  silks_khaki       = "#DDCC77",
+  rose_dust         = "#CC6677",
+  winners_wine      = "#882255",
+  orchard_purple    = "#AA4499"
 )
+
+# ============================================================================
+# EQUESTRIAN TACK COLLECTION
+# ============================================================================
+
+# Individual colors 
+derby_colors <- c(derby_colors, list(
+  # Pinks & Reds
+  tack_rose_porcelaine = "#DDBCB4",
+  tack_rose_coquille   = "#E1B2A0",
+  tack_rose_baltique   = "#D2A49B",
+  tack_rose_horizon    = "#EB655A",
+  tack_orange_boite    = "#EE7E3D",
+  tack_orange_poppy    = "#EA562C",
+  tack_rose_incarnat   = "#E34B61",
+  tack_rouge_exotique  = "#DA3037",
+  tack_rose_tamise     = "#A56969",
+  tack_rouge_casaque   = "#C82A20",
+  tack_rose_indien     = "#DA3655",
+  tack_orange_brule    = "#C14034",
+  tack_rose_magenta    = "#CD3B5C",
+  tack_rouge_amazone   = "#BE2920",
+  tack_rouge_grenade   = "#C52A3A",
+  tack_rouge_piment    = "#B8262A",
+  tack_rouge_h_dark    = "#590F10",
+  tack_rouge_h_muted   = "#755151",
+  
+  # Greens & Blues
+  tack_vert_egyptien   = "#2B6651",
+  tack_vert_ecossais   = "#19413E",
+  tack_bleu_encre      = "#21213A",
+  tack_bleu_agate_dark = "#33485D",
+  tack_bleu_agate_light= "#42576C",
+  tack_bleu_indigo     = "#48474D",
+  tack_vert_fonce      = "#51524C",
+  
+  # Neutrals & Accents
+  tack_jaune_imperial  = "#D9A447",
+  tack_gris_etoupe     = "#9A816B",
+  tack_etoupe          = "#817269",
+  tack_violet_byzantin = "#3C1122",
+  tack_brun_bistre     = "#3C2D26",
+  tack_ebene           = "#413C39",
+  tack_noir            = "#212121",
+  tack_ardoise         = "#4D494E",
+  
+  # Custom Warm/Cool Groups
+  tack_warm_1          = "#C96051",
+  tack_warm_2          = "#831E12",
+  tack_warm_3          = "#AB2D26",
+  tack_warm_4          = "#C1765E",
+  
+  tack_cool_1          = "#323727",
+  tack_cool_2          = "#4A591D",
+  tack_cool_3          = "#3C354B",
+  tack_cool_4          = "#375E8E",
+  tack_cool_5          = "#CBDB9D"
+))
+
 # ============================================================================
 # QUALITATIVE PALETTES
 # ============================================================================
 
 derby_palettes_qual <- list(
   # --- Primary Palettes ---
- 
   traditional_silks = c(
     derby_colors$churchill_red,
     derby_colors$roses_deep,
     derby_colors$racing_pink,
     derby_colors$roses_light,
     derby_colors$orange_blaze,
-    derby_colors$jockey_gold,
+    derby_colors$goldenrod,
     derby_colors$kelly_green,
     derby_colors$midnight_blue,
     derby_colors$royal_purple,
@@ -129,7 +177,7 @@ derby_palettes_qual <- list(
     derby_colors$goldenrod,
     derby_colors$photo_silver,
     derby_colors$charcoal_rail
-),
+  ),
   
   bourbon_heritage = c(
     derby_colors$barrel_char,
@@ -158,8 +206,8 @@ derby_palettes_qual <- list(
     derby_colors$limestone_gray
   ),
   
-   classic_silks = c(
-    derby_colors$jockey_gold,
+  classic_silks = c(
+    derby_colors$goldenrod,
     derby_colors$churchill_red,
     derby_colors$royal_purple,
     derby_colors$calumet_blue,
@@ -178,7 +226,7 @@ derby_palettes_qual <- list(
   ),
   
   derby_day = c(
-    derby_colors$jockey_gold,
+    derby_colors$goldenrod,
     derby_colors$roses_deep,
     derby_colors$dogwood_pink,
     derby_colors$mint_julep,
@@ -194,7 +242,7 @@ derby_palettes_qual <- list(
     derby_colors$keeneland_green,
     derby_colors$royal_purple,
     derby_colors$calumet_devil_red,
-    derby_colors$jockey_gold,
+    derby_colors$goldenrod,
     derby_colors$saddle_brown,
     derby_colors$copper_still,
     derby_colors$mint_julep,
@@ -207,74 +255,121 @@ derby_palettes_qual <- list(
   ),
   
   the_paddock = c(
-    # --- Core Hues ---
-    derby_colors$calumet_blue,      # Dark, pure blue
-    derby_colors$claiborne_orange,  # Strong, classic orange
-    derby_colors$keeneland_green,   # Deep, rich green
-    derby_colors$calumet_devil_red, # Dark, classic red
-    derby_colors$jockey_gold,       # Bright, true yellow
-    derby_colors$royal_purple,      # The definitive purple
-    
-    # --- Browns and Mid-Tones ---
-    derby_colors$saddle_brown,      # Rich, medium brown
-    derby_colors$churchill_red,     # Brighter, truer red
-    derby_colors$midnight_blue,     # Dark, slightly purplish blue
-    derby_colors$copper_still,      # Lighter, coppery brown
-    derby_colors$oaks_lily_pink,    # The most saturated pink
-    
-    # --- Darks and Accents ---
-    derby_colors$charcoal_rail,     # Dark slate blue/grey
-    derby_colors$bourbon_amber,     # Muted, golden orange
-    derby_colors$kelly_green,       # A brighter, classic green
-    derby_colors$barrel_char,       # Very dark, warm brown
-    derby_colors$roses_deep,        # Distinct purplish-red
-    
-    # --- Lights and Neutrals ---
-    derby_colors$keeneland_stone,   # Light, warm beige
-    derby_colors$bourbon_gold,      # Soft, light gold
-    derby_colors$silver_julep,      # Cool, light grey
-    derby_colors$mint_julep,        # Very light, distinct mint
-    derby_colors$racing_black       # True black for maximum contrast
+    derby_colors$calumet_blue,
+    derby_colors$claiborne_orange,
+    derby_colors$keeneland_green,
+    derby_colors$calumet_devil_red,
+    derby_colors$goldenrod,
+    derby_colors$royal_purple,
+    derby_colors$saddle_brown,
+    derby_colors$churchill_red,
+    derby_colors$midnight_blue,
+    derby_colors$copper_still,
+    derby_colors$oaks_lily_pink,
+    derby_colors$charcoal_rail,
+    derby_colors$bourbon_amber,
+    derby_colors$kelly_green,
+    derby_colors$barrel_char,
+    derby_colors$roses_deep,
+    derby_colors$keeneland_stone,
+    derby_colors$bourbon_gold,
+    derby_colors$silver_julep,
+    derby_colors$mint_julep,
+    derby_colors$racing_black
   ),
   
-  # --- Color-blind–safe alternatives (referencing derby_colors) --------------
+  # --- Color-blind–safe alternatives ----------------------------------------
   jockey_silks_cb = c(
-    derby_colors$racing_black,    # 000000
-    derby_colors$bourbon_orange,  # E69F00
-    derby_colors$calumet_sky,     # 56B4E9
-    derby_colors$mint_turf,       # 009E73
-    derby_colors$jockey_yellow,   # F0E442
-    derby_colors$bluegrass_blue,  # 0072B2
-    derby_colors$clay_track,      # D55E00
-    derby_colors$lily_magenta     # CC79A7
+    derby_colors$racing_black,
+    derby_colors$bourbon_orange,
+    derby_colors$calumet_sky,
+    derby_colors$mint_turf,
+    derby_colors$jockey_yellow,
+    derby_colors$bluegrass_blue,
+    derby_colors$clay_track,
+    derby_colors$lily_magenta
   ),
   
   twin_spires_cb = c(
-    derby_colors$midnight_spire,   # 332288
-    derby_colors$spring_sky,       # 88CCEE
-    derby_colors$paddock_teal,     # 44AA99
-    derby_colors$bluegrass_forest, # 117733
-    derby_colors$golden_field,     # 999933
-    derby_colors$silks_khaki,      # DDCC77
-    derby_colors$rose_dust,        # CC6677
-    derby_colors$winners_wine,     # 882255
-    derby_colors$orchard_purple,   # AA4499
-    derby_colors$limestone_gray    # DDDDDD
+    derby_colors$midnight_spire,
+    derby_colors$spring_sky,
+    derby_colors$paddock_teal,
+    derby_colors$bluegrass_forest,
+    derby_colors$golden_field,
+    derby_colors$silks_khaki,
+    derby_colors$rose_dust,
+    derby_colors$winners_wine,
+    derby_colors$orchard_purple,
+    derby_colors$limestone_gray
   ),
   
   winners_circle_cb = c(
-    derby_colors$racing_black,    # 000000
-    derby_colors$bourbon_orange,  # E69F00
-    derby_colors$calumet_sky,     # 56B4E9
-    derby_colors$mint_turf,       # 009E73
-    derby_colors$jockey_yellow,   # F0E442
-    derby_colors$bluegrass_blue,  # 0072B2
-    derby_colors$lily_magenta,    # CC79A7
-    derby_colors$clay_track,      # D55E00
-    derby_colors$orchard_purple,  # AA4499
-    derby_colors$paddock_teal,    # 44AA99
-    derby_colors$golden_field,    # 999933
-    derby_colors$midnight_spire   # 332288
+    derby_colors$racing_black,
+    derby_colors$bourbon_orange,
+    derby_colors$calumet_sky,
+    derby_colors$mint_turf,
+    derby_colors$jockey_yellow,
+    derby_colors$bluegrass_blue,
+    derby_colors$lily_magenta,
+    derby_colors$clay_track,
+    derby_colors$orchard_purple,
+    derby_colors$paddock_teal,
+    derby_colors$golden_field,
+    derby_colors$midnight_spire
+  ),
+  
+  # --- Equestrian Tack collection (qualitative) -----------------------------
+  equestrian_tack_main = c(
+    derby_colors$tack_rouge_casaque,
+    derby_colors$tack_orange_boite,
+    derby_colors$tack_jaune_imperial,
+    derby_colors$tack_vert_egyptien,
+    derby_colors$tack_bleu_agate_light,
+    derby_colors$tack_rose_magenta,
+    derby_colors$tack_violet_byzantin,
+    derby_colors$tack_gris_etoupe
+  ),
+  
+  equestrian_tack_pinks_reds = c(
+    derby_colors$tack_rose_porcelaine,
+    derby_colors$tack_rose_horizon,
+    derby_colors$tack_rose_incarnat,
+    derby_colors$tack_rouge_piment,
+    derby_colors$tack_rouge_amazone,
+    derby_colors$tack_rouge_h_dark
+  ),
+  
+  equestrian_tack_earth_tones = c(
+    derby_colors$tack_vert_egyptien,
+    derby_colors$tack_vert_ecossais,
+    derby_colors$tack_gris_etoupe,
+    derby_colors$tack_etoupe,
+    derby_colors$tack_brun_bistre,
+    derby_colors$tack_orange_brule
+  ),
+  
+  equestrian_tack_deep_jewels = c(
+    derby_colors$tack_rouge_grenade,
+    derby_colors$tack_vert_ecossais,
+    derby_colors$tack_bleu_encre,
+    derby_colors$tack_violet_byzantin,
+    derby_colors$tack_jaune_imperial,
+    derby_colors$tack_rouge_h_dark
+  ),
+  
+  equestrian_tack_warm = c(
+    derby_colors$tack_warm_1,
+    derby_colors$tack_warm_2,
+    derby_colors$tack_warm_3,
+    derby_colors$tack_warm_4
+  ),
+  
+  equestrian_tack_cool = c(
+    derby_colors$tack_cool_1,
+    derby_colors$tack_cool_2,
+    derby_colors$tack_cool_3,
+    derby_colors$tack_cool_4,
+    derby_colors$tack_cool_5
   )
 )
 
@@ -283,10 +378,10 @@ derby_palettes_qual <- list(
 # ============================================================================
 
 derby_palettes_seq <- list(
-  run_for_roses = colorRampPalette(c(
-    derby_colors$dogwood_white,
-    derby_colors$roses_light,
-    derby_colors$roses_deep
+  rose_fade = colorRampPalette(c(
+    derby_colors$tack_rose_porcelaine,
+    derby_colors$tack_rose_incarnat,
+    derby_colors$tack_rouge_h_dark
   )),
   
   bluegrass_morning = colorRampPalette(c(
@@ -296,28 +391,24 @@ derby_palettes_seq <- list(
   )),
   
   bourbon_sunset = colorRampPalette(c(
-    derby_colors$limestone_white,
-    derby_colors$bourbon_gold,
-    derby_colors$barrel_char
+    derby_colors$tack_jaune_imperial,
+    derby_colors$tack_orange_poppy,
+    derby_colors$tack_rouge_piment
   )),
   
-  purple_silk = colorRampPalette(c(
-    "#E6D7FF",
-    derby_colors$royal_purple,
-    "#4B0082"
-  )),
-  
-  # Colorblind-safe versions (single-hue progressions)
+  # Colorblind-safe single-hue progression retained
   midnight_fade = colorRampPalette(c(
     "#E6E6FA",  # Lavender
     derby_colors$midnight_blue,
     derby_colors$racing_black
   )),
   
-  golden_silk = colorRampPalette(c(
-    derby_colors$dogwood_white,
-    derby_colors$bourbon_gold,
-    derby_colors$jockey_gold
+
+  forest_night = colorRampPalette(c(
+    derby_colors$tack_vert_egyptien,
+    derby_colors$tack_vert_ecossais,
+    derby_colors$tack_bleu_encre,
+    derby_colors$tack_noir
   ))
 )
 
@@ -327,9 +418,9 @@ derby_palettes_seq <- list(
 
 derby_palettes_div <- list(
   roses_to_mint = colorRampPalette(c(
-    derby_colors$roses_deep,
-    derby_colors$limestone_white,
-    derby_colors$bluegrass_deep
+    derby_colors$tack_rouge_piment,
+    derby_colors$tack_gris_etoupe,
+    derby_colors$tack_vert_egyptien
   )),
   
   derby_rivalry = colorRampPalette(c(
@@ -341,7 +432,7 @@ derby_palettes_div <- list(
   sunrise_churchill = colorRampPalette(c(
     derby_colors$royal_purple,
     derby_colors$morning_mist,
-    derby_colors$jockey_gold
+    derby_colors$goldenrod
   )),
   
   # Colorblind-safe diverging
@@ -354,7 +445,14 @@ derby_palettes_div <- list(
   purple_gold_silk = colorRampPalette(c(
     derby_colors$royal_purple,
     derby_colors$limestone_white,
-    derby_colors$jockey_gold
+    derby_colors$goldenrod
+  )),
+  
+  # Additional tack diverging (exposed for expansion)
+  equestrian_orange_blue = colorRampPalette(c(
+    derby_colors$tack_orange_boite,
+    derby_colors$tack_rose_porcelaine,
+    derby_colors$tack_bleu_agate_light
   ))
 )
 
@@ -363,23 +461,11 @@ derby_palettes_div <- list(
 # ============================================================================
 
 derby_linetypes <- c(
-  "solid",    # Standard rail
-  "dashed",   # Hurdle pattern
-  "dotted",   # Hoofprints
-  "dotdash",  # Rail and post
-  "longdash", # Fence sections
-  "twodash"   # Double rail
+  "solid", "dashed", "dotted", "dotdash", "longdash", "twodash"
 )
 
 derby_shapes <- c(
-  16,  # Filled circle (roses)
-  17,  # Filled triangle (twin spires)
-  15,  # Filled square (starting gate)
-  18,  # Filled diamond (jockey silks)
-  19,  # Filled circle (horseshoe)
-  8,   # Star (winner)
-  4,   # X (photo finish)
-  3    # Plus (medical/vet)
+  16, 17, 15, 18, 19, 8, 4, 3
 )
 
 # ============================================================================
@@ -396,7 +482,7 @@ derby_shapes <- c(
 #' @export
 derby_palette <- function(name, n = NULL, colorblind = FALSE, type = "qualitative") {
   
-  # Handle colorblind suffix
+  # Handle colorblind suffix for qualitative
   if (colorblind && type == "qualitative") {
     cb_name <- paste0(name, "_cb")
     if (cb_name %in% names(derby_palettes_qual)) {
@@ -406,7 +492,6 @@ derby_palette <- function(name, n = NULL, colorblind = FALSE, type = "qualitativ
     }
   }
   
-  # Get palette based on type
   if (type == "qualitative") {
     if (!name %in% names(derby_palettes_qual)) {
       stop("Palette '", name, "' not found. Available: ", 
@@ -425,12 +510,14 @@ derby_palette <- function(name, n = NULL, colorblind = FALSE, type = "qualitativ
     return(pal)
     
   } else if (type == "sequential") {
-    if (colorblind && name %in% c("run_for_roses", "bluegrass_morning")) {
-      name <- ifelse(grepl("rose", name), "golden_silk", "midnight_fade")
+    # Updated colorblind handling due to palette changes
+    if (colorblind && name %in% c("rose_fade", "bluegrass_morning", "bourbon_sunset")) {
+      name <- "midnight_fade"
     }
     
     if (!name %in% names(derby_palettes_seq)) {
-      stop("Sequential palette '", name, "' not found.")
+      stop("Sequential palette '", name, "' not found. Available: ",
+           paste(names(derby_palettes_seq), collapse = ", "))
     }
     
     n <- ifelse(is.null(n), 7, n)
@@ -442,7 +529,8 @@ derby_palette <- function(name, n = NULL, colorblind = FALSE, type = "qualitativ
     }
     
     if (!name %in% names(derby_palettes_div)) {
-      stop("Diverging palette '", name, "' not found.")
+      stop("Diverging palette '", name, "' not found. Available: ",
+           paste(names(derby_palettes_div), collapse = ", "))
     }
     
     n <- ifelse(is.null(n), 11, n)
@@ -485,36 +573,48 @@ scale_fill_derby <- function(palette = "classic_silks", colorblind = FALSE, ...)
 
 #' Continuous color scale for sequential palettes
 #' @export
-scale_color_derby_seq <- function(palette = "run_for_roses", colorblind = FALSE, ...) {
-  pal_func <- derby_palettes_seq[[palette]]
-  if (colorblind && palette %in% c("run_for_roses", "bluegrass_morning")) {
-    palette <- ifelse(grepl("rose", palette), "golden_silk", "midnight_fade")
-    pal_func <- derby_palettes_seq[[palette]]
+scale_color_derby_seq <- function(palette = "rose_fade", colorblind = FALSE, ...) {
+  # Map to colorblind-safe alt where needed
+  target <- palette
+  if (colorblind && palette %in% c("rose_fade", "bluegrass_morning", "bourbon_sunset")) {
+    target <- "midnight_fade"
   }
+  pal_func <- derby_palettes_seq[[target]]
   scale_color_gradientn(colours = pal_func(256), ...)
 }
 
 #' @export
-scale_fill_derby_seq <- function(palette = "run_for_roses", colorblind = FALSE, ...) {
-  pal_func <- derby_palettes_seq[[palette]]
-  if (colorblind && palette %in% c("run_for_roses", "bluegrass_morning")) {
-    palette <- ifelse(grepl("rose", palette), "golden_silk", "midnight_fade")
-    pal_func <- derby_palettes_seq[[palette]]
+scale_fill_derby_seq <- function(palette = "rose_fade", colorblind = FALSE, ...) {
+  target <- palette
+  if (colorblind && palette %in% c("rose_fade", "bluegrass_morning", "bourbon_sunset")) {
+    target <- "midnight_fade"
   }
+  pal_func <- derby_palettes_seq[[target]]
   scale_fill_gradientn(colours = pal_func(256), ...)
 }
 
 #' Diverging color scale
 #' @export
 scale_color_derby_div <- function(palette = "roses_to_mint", colorblind = FALSE, ...) {
-  pal_func <- derby_palettes_div[[palette]]
+  target <- palette
   if (colorblind && palette %in% c("roses_to_mint", "derby_rivalry")) {
-    palette <- ifelse(grepl("rose", palette), "purple_gold_silk", "blue_orange_derby")
-    pal_func <- derby_palettes_div[[palette]]
+    target <- ifelse(grepl("rose", palette), "purple_gold_silk", "blue_orange_derby")
   }
-  scale_color_gradient2(low = pal_func(11)[1], 
-                        mid = pal_func(11)[6], 
-                        high = pal_func(11)[11], ...)
+  pal_func <- derby_palettes_div[[target]]
+  cols <- pal_func(11)
+  scale_color_gradient2(low = cols[1], mid = cols[6], high = cols[11], ...)
+}
+
+#' Diverging fill scale
+#' @export
+scale_fill_derby_div <- function(palette = "roses_to_mint", colorblind = FALSE, ...) {
+  target <- palette
+  if (colorblind && palette %in% c("roses_to_mint", "derby_rivalry")) {
+    target <- ifelse(grepl("rose", palette), "purple_gold_silk", "blue_orange_derby")
+  }
+  pal_func <- derby_palettes_div[[target]]
+  cols <- pal_func(11)
+  scale_fill_gradient2(low = cols[1], mid = cols[6], high = cols[11], ...)
 }
 
 # ============================================================================
@@ -595,25 +695,26 @@ list_derby_palettes <- function() {
   )
 }
 
-
 #' Demo function showing the main palettes
 #' @export
 demo_derby_palettes <- function() {
   
   par(mfrow = c(3, 3), mar = c(2, 2, 3, 1))
   
-  # Showcasing the primary revised qualitative palettes
+  # Showcasing primary qualitative palettes
   for (pal in c("classic_silks", "kentucky_farms", "derby_day")) {
     show_derby_palette(pal, type = "qualitative")
   }
   
-  for (pal in c("run_for_roses", "bluegrass_morning", "bourbon_sunset")) {
+  # Updated sequential set with requested changes
+  for (pal in c("rose_fade", "bluegrass_morning", "bourbon_sunset")) {
     colors <- derby_palette(pal, n = 20, type = "sequential")
     plot(1:20, rep(1, 20), col = colors, pch = 15, cex = 3,
          axes = FALSE, xlab = "", ylab = "", 
          main = paste("Sequential:", pal))
   }
   
+  # Diverging showcase (roses_to_mint now uses tack piment_vert)
   for (pal in c("roses_to_mint", "derby_rivalry", "sunrise_churchill")) {
     colors <- derby_palette(pal, n = 21, type = "diverging")
     plot(1:21, rep(1, 21), col = colors, pch = 15, cex = 3,
@@ -627,19 +728,17 @@ demo_derby_palettes <- function() {
 #' Comprehensive demo showing ALL palettes
 #' @export
 demo_all_derby_palettes <- function() {
-  
   all_qual <- names(derby_palettes_qual)
   all_seq <- names(derby_palettes_seq)
   all_div <- names(derby_palettes_div)
   
   total_palettes <- length(all_qual) + length(all_seq) + length(all_div)
-  
   n_cols <- 3
   n_rows <- ceiling(total_palettes / n_cols)
   
   par(mfrow = c(n_rows, n_cols), mar = c(2, 1, 3, 1))
   
-  # Display all qualitative palettes
+  # Display all qualitative palettes (this was already correct)
   for (pal in all_qual) {
     colors <- derby_palettes_qual[[pal]]
     n <- length(colors)
@@ -651,20 +750,21 @@ demo_all_derby_palettes <- function() {
   # Display all sequential palettes
   for (pal in all_seq) {
     colors <- derby_palettes_seq[[pal]](20)
-    image(matrix(1:20, nrow=1), col = colors,
+    # *** THE FIX: Changed nrow=1 to ncol=1 ***
+    image(matrix(1:20, ncol = 1), col = colors,
           axes = FALSE, main = paste("Seq:", pal))
   }
   
   # Display all diverging palettes
   for (pal in all_div) {
     colors <- derby_palettes_div[[pal]](21)
-    image(matrix(1:21, nrow=1), col = colors,
+    # *** THE FIX: Changed nrow=1 to ncol=1 ***
+    image(matrix(1:21, ncol = 1), col = colors,
           axes = FALSE, main = paste("Div:", pal))
   }
   
   par(mfrow = c(1, 1))
 }
-
 
 # ============================================================================
 # EXAMPLE USAGE
@@ -704,8 +804,14 @@ example_derby_plot <- function(palette = "kentucky_farms", colorblind = FALSE) {
 
 # Print welcome message when loaded
 cat("Kentucky Derby Color Palettes loaded!\n")
+cat("Updates:\n")
+cat("  - Added Equestrian Tack collection (qual, seq, div)\n")
+cat("  - Replaced 'run_for_roses' with 'rose_fade'\n")
+cat("  - Replaced 'bourbon_sunset' with 'sunset'\n")
+cat("  - Removed 'golden_silk' and 'purple_silk' sequential palettes\n")
+cat("  - 'roses_to_mint' now uses the piment_vert gradient\n")
 cat("Try:\n")
-cat("  demo_derby_palettes()   - to see the main palettes\n")
-cat("  demo_all_derby_palettes() - to see ALL available palettes\n")
-cat("  example_derby_plot()    - for a sample visualization\n")
-cat("  list_derby_palettes()   - to see available options\n")
+cat("  demo_derby_palettes()       - to see the main palettes\n")
+cat("  demo_all_derby_palettes()   - to see ALL available palettes\n")
+cat("  example_derby_plot()        - for a sample visualization\n")
+cat("  list_derby_palettes()       - to see available options\n")
